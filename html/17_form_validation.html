@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- pattern [A-Za-z]+ -->
+
+    <form action="">
+        <table align="center">
+            <caption>Form data</caption>
+            <tr>
+                <td><label for="">Enter your name</label></td>
+                <!-- <td> <input type="text" placeholder="Enter your name" pattern="[A-Za-z]+" value="" title="Name" name="" required></td> -->
+                <td> <input type="text" placeholder="Enter your name" pattern="[A-Za-z]{4,10}" value="" title="Name" name="" required></td>
+            </tr>
+            <tr>
+                <td>surname</label></td>
+                <td> <input type="text" required pattern="[A-Za-z]{4,10}" placeholder="Enter your surname"></td>
+            </tr>
+            <tr>
+                <!-- shubhamjadav22@gmail.com -->
+
+                <!-- [a-z0-9]+'@'+[a-z]+'.'+[a-z]{2,3} -->
+                <td> <label>Enter your Email</label></td>
+                <td><input type="email" required placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td> <label>Enter your phone</label></td>
+                <!-- <td><input type="tel" pattern="[0-9]+" required placeholder="Enter your Phone"></td> -->
+                 <td><input type="tel" pattern="[6789][0-9]{9}" maxlength="10" required placeholder="Enter your Phone"></td>
+            </tr>
+             <tr>
+                <td> <label>Enter your quity</label></td>
+                <!-- Capital, small,symbole,number -->
+                <td><input type="number"  min="1" max="6" required placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td> <label>Enter your password</label></td>
+                <!-- Capital, small,symbole,number -->
+                <td><input type="password" pattern="[A-Z][A-Za-z0-9]{8,12}" required placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
