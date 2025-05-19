@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: red;
+        }
+        .main::first-line{
+            background-color: aqua;
+        }
+        .main::selection{
+            background-color: lightcoral;
+            color: aqua;
+        }
+        ul li::before{
+            content: "s";
+            height: 200px;
+        }
+        ul li::after{
+            content: "sgu";
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ::  -->
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, in labore. Quaerat incidunt quasi repellat
+        vero officiis praesentium soluta, dolorem quo, labore eum omnis similique magni architecto, expedita molestias.
+        Iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis consectetur explicabo sint quam
+        harum quod cumque rem quo pariatur doloremque, earum blanditiis iure alias, quaerat voluptatibus sequi sapiente
+        reiciendis.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum iusto sed optio
+        accusamus inventore ullam, veniam perferendis id quos ipsa quidem. Obcaecati, molestias possimus soluta totam
+        magnam ab delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aperiam tempore dicta
+        veniam ipsum tenetur vero sed sunt magnam laudantium rem recusandae blanditiis aut repellendus delectus
+        inventore aspernatur alias explicabo.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul li:first-child{
+            background-color: red;
+            color: teal;
+        }
+        ul li:last-child{
+            background-color: aqua;
+        }
+        ul li:nth-child(4){
+            background-color: blue;
+        }
+        ul li:nth-child(5){
+            background-color: blue;
+        } */
+        ul li:nth-child(even){
+            background-color: red;
+        }
+        ul li:nth-child(odd){
+            background-color: blue;
+        }
+
+        /* ul li:nth-last-child(2){
+            background-color: red;
+        } */
+        .main {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+
+        .main:hover {
+            background-color: red;
+            color: aqua;
+            border-radius: 50%;
+            transform: translate(100px, 100px);
+
+        }
+
+        input {
+            margin-top: 100px;
+            border: none;
+            outline: none;
+        }
+
+        input:focus {
+            background-color: lightcoral;
+            color: aqua;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- psude0 class (:) :- selector -->
+    <!-- psudeo elemet (::) -->
+
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <input type="text" placeholder="ENter your name">
+</body>
+
+</html>
