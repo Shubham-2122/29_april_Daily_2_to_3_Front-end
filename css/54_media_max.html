@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* defualt tv */
+        .main{
+            height: 400px;
+            background: red;
+        }
+        /* pc :- 992px - 1200px */
+        @media only screen and (max-width:1200px) {
+            .main{
+                background: lightcoral;
+            }
+        }
+        /* /max table 768px - 992px  */
+        @media only screen and (max-width:992px){
+            .main{
+                background: linear-gradient(red,green,blue);
+                width: 50%;
+            }
+        }
+        /* mini tab 576px - 768px */
+        @media only screen and (max-width:768px) {
+            .main{
+                background: lightgreen;
+                width: 100%;
+            }
+        }
+        /* mobile 0-576px */
+        @media only screen and (max-width:576px) {
+            .main{
+                background: blue;
+                width: 400px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- media :- respo device -->
+
+    <div class="main">
+
+    </div>
+
+</body>
+</html>
