@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utitlis :- resuse */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+#header {
+    background: url("/image/header.png");
+    background-size: 100% 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.list .listdata {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.listdata .lista {
+    text-decoration: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #ffefd5;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.icon i {
+    color: #ffefd5;
+    font-size: 23px;
+}
+.header-main {
+    padding: 60px 0;
+    font-family: "Montserrat";
+}
+.header-main .header-h1 {
+    font-size: 78px;
+    text-transform: uppercase;
+    color: #ffefd5;
+    font-weight: 700;
+}
+
+.header-main .header-p {
+    font-size: 30px;
+    color: #ffefd5;
+    font-weight: 400;
+    width: 50%;
+    margin: 30px 0;
+}
+.header-main .header-btn {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #b75a74;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    border:  none;
+    border-radius: 33px;
+    background-color: #ffefd5;
+}
+
+/* header end */
