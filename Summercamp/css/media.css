@@ -1,12 +1,34 @@
-@media only screen and (max-width:1200px) {
-    
-}
-@media only screen and (max-width:992x) {
-    
-}
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:992x) {}
+
 @media only screen and (max-width:768px) {
-    
+    .list {
+        display: none;
+    }
+    .icon .search {
+        display: none;
+    }
+
+    .icon .bar {
+        display: block;
+    }
+
+    .team-card .row {
+        flex-direction: column;
+    }
+
+    .team-card .row .col {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .team-data .team-p {
+        width: 100%;
+    }
 }
+
 @media only screen and (max-width:576px) {
-    
+    .team-card .row .col {
+        width: 100%;
+    }
 }
