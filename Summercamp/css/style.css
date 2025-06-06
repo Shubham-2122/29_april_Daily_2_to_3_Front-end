@@ -100,7 +100,7 @@
 }
 
 .team-data .team-h1 {
-        font-size: clamp(20px, 7vw, 64px);
+    font-size: clamp(20px, 7vw, 64px);
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -109,7 +109,7 @@
     width: 50%;
     margin: 20px auto;
     font-size: 25px;
-     font-size: clamp(16px, 3vw, 25px);
+    font-size: clamp(16px, 3vw, 25px);
     font-weight: 400;
 }
 
@@ -146,3 +146,110 @@
 }
 
 /* team end */
+
+/* serve start */
+#resev {
+    background-color: #b75a74;
+    padding: 50px 0;
+}
+
+.resev .row {
+    display: flex;
+    align-items: center;
+}
+
+.resev .row .col {
+    width: 50%;
+}
+
+.resev .img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.resev-content {
+    font-family: "Montserrat";
+    color: #ffefd5;
+}
+
+.resev-content .resev-h2 {
+    font-size: clamp(20px, 7.5vw, 75px);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.resev-content .resev-p {
+    font-size: clamp(16px, 3.5vw, 30px);
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.resev-content .resev-btn {
+    font-size: clamp(16px, 3vw, 25px);
+    text-transform: uppercase;
+    color: #b75a74;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 33px;
+    background-color: #ffefd5;
+}
+
+/* serve end */
+
+
+/* footer start */
+#footer {
+    padding: 50px 0;
+    background-color: #29141a;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row .col-4 {
+    width: 40%;
+}
+
+.footer .row .col-6 {
+    width: 60%;
+}
+
+.col-6 .row .col {
+    width: 33.33%;
+}
+
+.footer-text .footer-h3 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.footer-ul {
+    list-style: none;
+    margin: 10px 0;
+}
+.footer-ul .footer-li {
+    margin: 10px 0;
+}
+.footer-ul .footer-li .footer-a {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+.footer-text .footer-p{
+
+font-size: 24px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+width: 90%;
+margin: 10px 0;
+}
+
+/* footer end */
