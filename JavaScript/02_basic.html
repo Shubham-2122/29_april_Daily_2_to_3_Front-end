@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+</head>
+<body>
+    <!-- how to interanl js work -->
+
+    <h1 id="h1"></h1>
+
+    <h2 id="h2"></h2>
+    
+    <!-- js -->
+    <script>
+        // 1) conole 
+        // error and debug
+        console.log("Hello");
+        console.log(10+6)
+        console.log("sub =>",20-5)
+
+        // dom :- document object model
+        // dom manupatiplation
+        document.write("Hello javascript")
+        document.write("<h1><i>Hello</i></h1>")
+        document.write(10+10,"<br>")
+        document.write(10+10)
+
+        // method DOM innerTEXT
+        // console.log(document.getElementById("h1"))
+        
+        // 1) innerTExt method  :- just only for text without html
+        document.getElementById("h1").innerText = "<i>Hello this H1 Tag</i>"
+
+        // console.log(document.getElementById("h2"))
+        // inerHTML MEthod :- Text and html wirten
+        document.getElementById("h2").innerHTML = "<i>Hello this h2 tag</i>"
+
+        
+
+    </script>
+</body>
+</html>
