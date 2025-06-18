@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- EVENt :-  javascrpit Event base 
+    function 
+    user call -->
+
+    <!-- EVENT  -->
+     <!-- 1) mouse :- click, hover,enter leavel 
+     2) keyboard :- press , up ,down
+     3) window :- resize
+     4) form :- submit ,change  -->
+
+     <button onclick="add()">Click</button>
+
+     <h1 id="h1"></h1>
+
+     <script>
+        let a=20,b=10
+        function add(){
+            console.log("add =>",a+b)
+            // document.writeln("Add =>",a+b)
+            document.getElementById("h1").innerHTML = a+b
+        }
+        
+     </script>
+     
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- function :- it's block of code whenever need when call it.()  -->
+    <!-- it's reuse -->
+    <!-- function on type :- 2  -->
+
+    <!-- 1) predefined function  :- inbuilt in js -->
+
+    <!-- 2)user defined function :- user will create  -->
+
+    <!-- syntax :- 
+     function function-name(){
+        ...code;logic 
+     }
+
+     function-name() -->
+
+    <script>
+
+        // 1) predefiend function 
+
+        // alert("Hello")
+        // console.log("hello")
+        // document.writeln("Hello")
+
+        // user define 2 cat 
+
+        // 1) without para 
+
+        let a = 15, b = 10;
+
+        function sum() {
+            let sum = a + b
+            console.log("sum =>", sum)
+            // document.write("sum =>",sum,"<br>")
+            document.writeln(`<h2>sum :- ${sum} </h2>`)
+        }
+        sum()
+        sum()
+
+        // 2) with para  
+
+        function sub(a, b) {
+            console.log("sub =>", a - b)
+            document.write("sub =>", a - b, "<br>")
+        }
+
+        // NAN :- not a number
+
+        sub(20, 10)
+        sub(30, 10)
+
+
+        // function return 
+
+        function data(a,b){
+            return a+b 
+        }
+
+        console.log(data(20,50))
+        document.write(data(20,50))
+
+    </script>
+
+
+</body>
+
+</html>
