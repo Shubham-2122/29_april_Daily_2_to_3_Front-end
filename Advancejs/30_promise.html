@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function data(res){
+            console.log(res)
+        } 
+
+
+        // pending :- output pending
+        // complete :- fullfield
+        // reject :- error logic,
+
+        let Puse = new Promise((resolve,reject)=>{
+            let call = true
+            if(call){
+                // console.log("call mesaage for accept..")
+                resolve("call mesaage for accept..")
+            }
+            else{
+                // console.log("call not accept..")
+                reject("call not accept..")
+            }
+        })
+        .then(
+            function(res){
+                data(res)
+            }
+        )
+        .catch(
+            function(res){
+                data(res)
+            }
+
+        )
+
+        // console.log(Puse)
+
+    </script>
+</body>
+</html>

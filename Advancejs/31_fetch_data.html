@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- fetch :- javascript inbuilt function  -->
+    <!-- fetch :-promise as object /array  -->
+    <!-- back-end read -->
+    <!-- 
+    syntax :- 
+    fetch("location",{
+        method :"GET"
+    })
+    .then(text data convert javscript format) 
+    .then(output show) -->
+
+    <h1 id="h1"></h1>
+
+    <button onclick="data()">Show data</button>
+
+
+    <script>
+
+        //    console.log(fetch())
+
+        function data() {
+            fetch("data.txt", {
+                method: "GET"
+            })
+            // first convert data
+                .then((res) => {
+                    // text file convart text file
+                    // // console.log(res)
+                    // console.log(res.text())
+                    return res.text()
+                })
+                // data to print in statement
+                .then((data) => {
+                    console.log(data)
+                    // document.writeln(data)
+                    document.getElementById("h1").innerHTML = data
+                })
+        }
+
+    </script>
+
+
+</body>
+
+</html>
