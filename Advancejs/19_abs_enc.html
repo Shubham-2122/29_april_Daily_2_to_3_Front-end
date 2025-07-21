@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- encul :- hide data (private) -->
+    <!-- absc :- how hide data to access -->
+
+
+    <script>
+
+        function Person(name, age) {
+
+            // _ This data private hide data
+            // encu
+            let _name = name;
+            let _age = age;
+
+            // absrc
+            this.getname = () => {
+                return _name;
+            }
+            this.getAge = () => {
+                return _age;
+            }
+            this.setage=(newage)=>{
+                if(newage){
+                    return _age = newage
+                }
+                else{
+                    return _age
+                }
+            }
+
+        }
+
+        let user = new Person("meet", 23)
+
+        console.log(user)
+        console.log(user._name)
+        console.log(user.getname())
+        console.log(user._age)
+        console.log(user.getAge())
+
+        user.setage(25)
+        console.log(user.getAge())
+        
+    </script>
+</body>
+
+</html>

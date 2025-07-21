@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- class in this keyword always use for constru varibale  -->
+
+    <script>
+
+        class Arith{
+            constructor(a,b){
+                this.a = a;
+                this.b = b 
+                console.log("a =>",this.a)
+                console.log("b =>",this.b)
+            }
+            x = function sum(){
+                console.log("sum =>",this.a+this.b);
+                document.writeln(`sum => ${this.a+this.b} <br>`)
+            }
+            y = function sub(){
+                console.log("sub =>",this.a-this.b)
+                document.writeln(`sub => ${this.a-this.b} <br>`)
+            }
+            mul(){
+                console.log("mul =>",this.a*this.b)
+                document.writeln(`mul => ${this.a*this.b} <br>`)
+            }
+            divi(){
+                console.log("divi =>",this.a/this.b)
+                // template :- varibale and text allow
+                document.writeln(`divi => ${this.a/this.b} <br>`)
+            }
+        }
+
+        const user = new Arith(40,20);
+        console.log(user)
+        user.x()
+        user.y()
+        user.divi()
+        user.mul()
+
+        const user1 = new Arith(50,20)
+        console.log(user1)
+        user1.divi()
+    </script>
+</body>
+</html>

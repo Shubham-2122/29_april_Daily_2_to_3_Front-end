@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class :- it's blue print of object  -->
+    <!-- // it's store collection in member function(function) and  data memeber(varibales) use in class it's class  -->
+
+    <!-- syntax -->
+     <!-- class class-name{
+        memebr function(){
+            data memeber
+        }
+        memebr function(){
+            data memeber
+        }
+     }
+
+     let data = new class-name -->
+
+     <input type="text"  name="" id="">
+
+    <script>
+
+        class bank{
+            // memeber function 
+            x = function Details(pin,blance){
+                // data memeber
+                let bankName = "HDFC";
+                let bankIfsc = "hdfc00012s";
+                let pinnumber = pin;
+                let bankblance = blance;
+
+                console.log("bank name :-",bankName);
+                console.log("bank code :-",bankIfsc);
+                console.log("bank Pin :-",pinnumber);
+                console.log("bank blance :-",bankblance);
+            }
+            y= function Addmoney(){
+                console.log("Add money")
+            }
+            z = function windorw(){
+                console.log("data remove")
+            }
+        }
+
+        // console.log(bank)
+
+        let meet = new bank;
+        console.log(meet)
+
+        meet.x(123,4000)
+        meet.y()
+        meet.x(123,3400)
+
+        let pratick = new bank;
+
+        console.log(pratick)
+        pratick.y()
+
+    </script>
+
+</body>
+</html>

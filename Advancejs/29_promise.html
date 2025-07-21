@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promise :- it's simple term of object  -->
+    <!-- object two type of value :- resolve and reject  -->
+
+    <!-- state :- 3 
+    1) pending :- hold 
+    2) fulfield :- completed show
+    3) reject :- error ,network  -->
+
+    <!-- sntax :- 
+    let data = new Promise(function(res,reject){
+
+    });
+    
+    let data1 = new Promise((res,reject)=>{
+    })
+    
+    -->
+
+    <script>
+
+        let user = new Promise(function(res,error){
+            let a = 10
+            if(a == 11){
+                console.log("resolve value")
+                res("successfully data completed")
+            }
+            else{
+                console.log("error value")
+                error("data not found..!")
+            }
+
+        })
+
+        console.log(user)
+
+    </script>
+
+</body>
+</html>

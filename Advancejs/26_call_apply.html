@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- object method combine use method  -->
+
+    <!-- call ;-  -->
+
+    <script>
+
+        let data = {
+            user : function(city,state){
+                console.log("firstname =>",this.firstname , " lastname =>",this.lastname , " city =>",city , " state =>",state);
+            }
+        }
+
+        let person={
+            firstname : "Meet",
+            lastname : "patel"
+        }
+
+        let person2={
+            firstname : "pratick",
+            lastname :"patel"
+        }
+
+        // console.log(data)
+        // data.user("hello","hello 2")
+
+        // call spartre arumenet value pass
+        data.user.call(person,"ahmedabad","gujarat")
+
+
+        // apply as array arugment
+        data.user.apply(person2,["surat","gujarat"])
+
+    </script>
+
+</body>
+</html>

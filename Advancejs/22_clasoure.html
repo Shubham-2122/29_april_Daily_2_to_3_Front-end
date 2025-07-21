@@ -1,0 +1,26 @@
+script<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- clsoure :- clsoing value function  -->
+
+    <script>
+      // hosting define
+      //   let a = 20;
+
+      function data() {
+        // closing function value
+        let a = 40;
+
+        console.log("a inner => ", a); //40
+      }
+      data();
+
+      console.log("a outer value =>", a); //20
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method overloading :-(compile time) class one but function name same but in parameter is defferent -->
+    <!-- method overrirding :-(run-tim) class have deffetern a and function name same  -->
+
+    <script>
+        class xy{
+            data(x){
+                console.log("x is value =>",x)
+            }
+            data(x,y){
+                console.log("sum =>",x+y)
+            }
+        }
+
+        const user = new xy
+        console.log(user)
+        user.data(20,30)
+
+        // method overring
+        
+        class A{
+            user(){
+                console.log("User 1 data")
+            }
+        }
+
+        class B extends A{
+            user(){
+                console.log("user 2 data")
+            }
+        }
+
+        class C extends B{
+            user(){
+                console.log("user 3 data")
+            }
+        }
+
+        // const data = new C 
+        // console.log(data)
+        // data.user()
+        // data.user()
+
+        // method overring array 
+        let data = [new A,new B,new C]
+        console.log(data)
+
+        data.forEach((value,index)=>{
+            value.user()
+        })
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A{
+            x = function data(){
+                console.log("data Class A")
+            }
+        }
+        class B extends A{
+            y = function data1(){
+                console.log("data class B")
+            }
+        }
+
+
+        class C extends A{
+            z = function data2(){
+                console.log("data Class C")
+            }
+        }
+
+        const user = new B 
+        console.log(user)
+        user.x()
+        user.y()
+
+        const user1 = new C 
+        console.log(user1)
+
+        user1.x()
+        user1.z()
+
+    </script>
+</body>
+</html>

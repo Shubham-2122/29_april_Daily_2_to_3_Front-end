@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inhritance :- one class to another class property use perenet to chaild data pass trow in last class -->
+    <!-- using extends -->
+
+    <!-- class a{
+        proerty
+    }
+    class b extends a{
+        peroty
+    } -->
+
+    <!-- type :- 
+    1) single inhritance 
+    2) multi level inhritance 
+    3) muliple inhritance  :- not use js 
+    4) hirachical inhritance 
+    5) hybrid inhritance :- any two inhritance combine  -->
+
+
+
+    <script>
+
+        // single A- B 
+
+        class A{
+            x = function data(){
+                console.log("this class A property...")
+            }
+
+        }
+
+        class B extends A{
+            y = function data1(){
+                console.log("this class B property..")
+            }
+        }
+
+        const user = new B
+        console.log(user)
+        user.y()
+        user.x()
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- class : function store varibale or without store. -->
+    <script>
+
+        class calc{
+            // memeber function
+            x = function sum(x,y){
+                console.log("Sum =>",x+y)
+                document.write("Sum =>",x+y,"<br>")
+            }
+
+            y = function sub(){
+                // data member
+                let x =40,y=10
+                console.log("sub =>",x-y)
+                document.write("Sub =>",x-y,"<br>")
+            }
+            
+            mul(a,b){
+                console.log("mul =>",a*b)
+                document.write("mul =>",a*b,"<br>")
+            }
+            divi(){
+                let a=40,b=2
+                console.log("divi =>",a/b)
+                document.write("divi =>",a/b,"<br>")
+            }
+        }
+
+        // console.log(calc)
+
+        let data = new calc
+        console.log(data)
+        data.x(40,40)
+        data.y()
+        data.mul(20,30)
+        data.divi()
+
+    </script>
+</body>
+</html>
