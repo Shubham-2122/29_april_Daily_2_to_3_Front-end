@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"Meet",
+        "course":"Front-end",
+        "age" : 23
+    },
+    {
+         "id":2,
+        "name":"pratik",
+        "course":"back-end",
+        "age" : 23
+    },
+    {
+         "id":3,
+        "name":"shubham",
+        "course":"Full-stack",
+        "age" : 26
+    }
+]

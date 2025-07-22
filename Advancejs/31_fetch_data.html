@@ -27,6 +27,11 @@
     <script>
 
         //    console.log(fetch())
+        // GET :- view all /par
+        // post :- new data 
+        // put :- update 
+        // delete :- remove data
+        
 
         function data() {
             fetch("data.txt", {
@@ -35,7 +40,7 @@
             // first convert data
                 .then((res) => {
                     // text file convart text file
-                    // // console.log(res)
+                    // console.log(res)
                     // console.log(res.text())
                     return res.text()
                 })
