@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        // fetch("https://660d95e36ddfa2943b34c530.mockapi.io/user",{
+        //     method:"GET"
+        // })
+        // .then((res)=>{
+        //     return res.json()
+        // })
+        // .then((data)=>{
+        //     console.log(data)
+        // })
+
+        // axios  measn third party app 
+
+        const getdata=async()=>{
+            const res = await axios.get("https://660d95e36ddfa2943b34c530.mockapi.io/user")
+            // console.log(res.data)
+            for(let user of res.data){
+                // console.log(user)
+                document.write(`<h4>id :- ${user.id} name :- ${user.name}</h4>`)
+            }
+        }
+        // getdata()
+
+        let person = {
+            name : "pratick",
+            email : "pratick@gmail.com",
+            cityname : "ahmedabad"
+        }
+
+        const createdata=async()=>{
+            const res = await axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/user",person);
+            console.log(res.data)
+            getdata()
+        }
+        // createdata()
+
+        const deletedata=async()=>{
+            const res = await axios.delete("https://660d95e36ddfa2943b34c530.mockapi.io/user/9")
+            console.log(res.data)
+        }
+
+        // deletedata()
+
+        let person1={
+            id:6,
+            name :"shubham",
+            email : "shubhamjadav.tops@gmail.com",
+            phone : 9726563223,
+            cityname : "bharuch"
+        }
+
+        const updatedata=async()=>{
+            const res = await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/user/${person1.id}`,person1)
+            console.log(res.data)
+        }
+        updatedata()
+
+    </script>
+</body>
+</html>
