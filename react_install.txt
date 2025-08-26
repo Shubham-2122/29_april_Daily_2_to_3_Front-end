@@ -1,0 +1,66 @@
+Javascript lang
+
+fremwork
+
+React :- fast build application,component resuse 
+anglure :- not resuse
+vue :- not resuse
+
+React :- single page html:- html page one
+--> without resresh page redirect 
+--> react vitrucal dom real dom copy
+
+react install
+node :-  javascript lib
+
+version = node -v 
+
+node packge manger
+npm = npm -v
+
+1) normal react
+first application 
+npm(global) vs npx(system)
+cmd :- npx create-react-app app-name
+cmd :- cd app-name
+cmd :- npm start
+
+2) vite + react app install
+vite + react
+nodemodule 
+npm install
+
+cmd :- npm create vite@latest app-name
+cd app-name
+cmd :- npm install
+cmd :- npm run dev
+
+
+folder struc
+1) node moudlue -> main global
+	-> npm install (npm i)
+
+2) public -> index.html
+	--> assets/images -> manual image
+
+3) src ->1) index.js -> div->root conect ->global
+	2) App.js -> index.js -> compoenent -> home,about
+
+4) package-lock.json 
+   pcakage.json
+
+ npm -y inti
+
+
+
+
+
+
+
+
+
+
+
+
+
+

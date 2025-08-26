@@ -1,0 +1,29 @@
+Constructor : It is a special member function whose task is to intialize the object of it's class.
+
+1. They have the same name as the class name.
+2. They do not have any return types.
+3. They are invoked automatically when the objects are created.
+
+types of constructor
+
+1. Default
+2. Parameterized
+3. Copy
+
+INheritance: The object of one class can aquire the properties of object of another class is called an inheritance.
+
+or 
+
+creating a new class from an existing class is called an inheritance.
+
+Types:
+
+1. SIngle
+2. Multilevel
+3. Multiple
+4. Hierarchy
+5. Hybrid
+
+
+
+
