@@ -1,8 +1,19 @@
 import React from "react";
+import ClassCompo from "./component/ClassCompo";
+import Funcompo from "./component/Funcompo";
+
 
 function App(){
     return(
-        <h1>Hello this App compoennt</h1>
+       <div>
+         <h1>Hello this App compoennt</h1>
+        
+        <ClassCompo />
+        <Funcompo />
+        <Funcompo />
+      
+       </div>
+       
     )
 }
 

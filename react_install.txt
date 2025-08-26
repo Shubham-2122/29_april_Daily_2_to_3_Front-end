@@ -51,6 +51,9 @@ folder struc
 
  npm -y inti
 
+index.html -> index.js -> App.js
+
+App.js -> index.js -> index.html
 
 
 
