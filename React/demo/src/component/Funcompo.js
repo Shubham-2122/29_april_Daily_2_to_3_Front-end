@@ -44,9 +44,11 @@
 import React from 'react'
 
 const Funcompo = () => {
+  console.log("hello Func")
   return (
-    <div>
+    <div>p
       <h1>Hello arrow funtion</h1>
+      
     </div>
   )
 }

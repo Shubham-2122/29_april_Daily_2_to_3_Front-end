@@ -1,6 +1,8 @@
 import React from "react";
-import ClassCompo from "./component/ClassCompo";
-import Funcompo from "./component/Funcompo";
+// import Hello from "./Jsx/Hello";
+// import ClassCompo from "./component/ClassCompo";
+// import Funcompo from "./component/Funcompo";
+import Css from "./Css/Css";
 
 
 function App(){
@@ -8,10 +10,16 @@ function App(){
        <div>
          <h1>Hello this App compoennt</h1>
         
-        <ClassCompo />
-        <Funcompo />
-        <Funcompo />
-      
+        {/* compoenent */}
+        {/* <ClassCompo /> */}
+        {/* <Funcompo /> */}
+        {/* <Funcompo /> */}
+
+        {/* jsx */}
+        {/* <Hello /> */}
+
+        {/* style */}
+        <Css />
        </div>
        
     )
