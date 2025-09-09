@@ -1,7 +1,8 @@
 import React from "react";
-import MainState from "./State/MainState";
-import FormData from "./formHadling/FormData";
-import FormUser from "./formHadling/FormUser";
+// import MainState from "./State/MainState";
+// import FormData from "./formHadling/FormData";
+// import FormUser from "./formHadling/FormUser";
+import Data from "./useEffect/Data";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./component/ClassCompo";
 // import Funcompo from "./component/Funcompo";
@@ -33,7 +34,9 @@ function App(){
 
         {/* form hadling */}
       {/* <FormData /> */}
-      <FormUser />
+      {/* <FormUser /> */}
+
+      <Data />
        </div>
        
     )
