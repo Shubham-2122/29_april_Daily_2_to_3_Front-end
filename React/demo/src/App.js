@@ -3,6 +3,8 @@ import React from "react";
 // import FormData from "./formHadling/FormData";
 // import FormUser from "./formHadling/FormUser";
 import Data from "./useEffect/Data";
+import ReactBoot from "./Bootstrap/ReactBoot";
+import LoginReact from "./Bootstrap/LoginReact";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./component/ClassCompo";
 // import Funcompo from "./component/Funcompo";
@@ -36,7 +38,10 @@ function App(){
       {/* <FormData /> */}
       {/* <FormUser /> */}
 
-      <Data />
+      {/* <Data /> */}
+
+      {/* <ReactBoot />  */}
+      <LoginReact />
        </div>
        
     )
