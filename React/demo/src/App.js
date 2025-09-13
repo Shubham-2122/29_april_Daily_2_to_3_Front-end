@@ -6,6 +6,10 @@ import Data from "./useEffect/Data";
 import ReactBoot from "./Bootstrap/ReactBoot";
 import LoginReact from "./Bootstrap/LoginReact";
 import MainData from "./context/MainData";
+import Home from "./layout/Pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./layout/Pages/About";
+import Contact from "./layout/Pages/Contact";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./component/ClassCompo";
 // import Funcompo from "./component/Funcompo";
@@ -15,8 +19,9 @@ import MainData from "./context/MainData";
 
 function App(){
     return(
+      <BrowserRouter>
        <div>
-         <h1>Hello this App compoennt</h1>
+    
         
         {/* compoenent */}
         {/* <ClassCompo /> */}
@@ -44,9 +49,15 @@ function App(){
       {/* <ReactBoot />  */}
       {/* <LoginReact /> */}
 
-      <MainData />
+      {/* <MainData /> */}
 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
        </div>
+       </BrowserRouter>
        
     )
 }
