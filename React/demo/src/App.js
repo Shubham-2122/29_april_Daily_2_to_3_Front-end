@@ -13,6 +13,7 @@ import Contact from "./layout/Pages/Contact";
 import About1 from "./layout/Pages/About1";
 import About2 from "./layout/Pages/About2";
 import NotFound from "./layout/Pages/NotFound";
+import LifeCycle from "./Lifecycle/LifeCycle";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./component/ClassCompo";
 // import Funcompo from "./component/Funcompo";
@@ -61,6 +62,7 @@ function App(){
             <Route path="about2" element={<About2 />} />
           </Route>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/life" element={<LifeCycle />}/>
 
           {/* not found page */}
           <Route path="*" element={<NotFound />}/>
