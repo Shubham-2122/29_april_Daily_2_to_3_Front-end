@@ -5,6 +5,9 @@ import Fonts from "./Background/Fonts";
 import Space from "./Background/Space";
 import Widthdata from "./Background/Widthdata";
 import Border from "./Background/Border";
+import Flex from "./Background/Flex";
+import Grid from "./Background/Grid";
+import Respo from "./Background/Respo";
 
 function App(){
   return(
@@ -15,7 +18,10 @@ function App(){
     {/* <Fonts /> */}
     {/* <Space /> */}
     {/* <Widthdata /> */}
-    <Border />
+    {/* <Border /> */}
+    {/* <Flex /> */}
+    {/* <Grid /> */}
+    <Respo />
     </>
   )
 }

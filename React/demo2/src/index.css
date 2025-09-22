@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+/* resp tag  */
+@layer base{
+    h1{
+        font-size: clamp(20px,5.6vw,50px);
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+@layer components{
+    .card{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        box-shadow: 0 0 10px 10px black;
+        background: linear-gradient(red,green);
+    }
+    .card1{
+          height: 200px;
+        width: 200px;
+        border: 2px solid;
+        box-shadow: 0 0 5px 5px black;
+    }
+}
+
+@layer utilities{
+    .mar{
+        margin: 20px;
+        padding: 20px;
+    }
+}
