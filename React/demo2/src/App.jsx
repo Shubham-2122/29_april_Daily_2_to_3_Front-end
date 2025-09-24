@@ -8,6 +8,7 @@ import Border from "./Background/Border";
 import Flex from "./Background/Flex";
 import Grid from "./Background/Grid";
 import Respo from "./Background/Respo";
+import Card from "./Background/Card";
 
 function App(){
   return(
@@ -21,7 +22,8 @@ function App(){
     {/* <Border /> */}
     {/* <Flex /> */}
     {/* <Grid /> */}
-    <Respo />
+    {/* <Respo /> */}
+    <Card />
     </>
   )
 }
