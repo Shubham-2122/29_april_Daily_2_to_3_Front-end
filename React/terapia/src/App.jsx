@@ -10,6 +10,8 @@ import Team from './Website/Pages/Team'
 import Testi from './Website/Pages/Testi'
 import Contact from './Website/Pages/Contact'
 import NotFound from './Website/Pages/NotFound'
+import Dashboard from './Admin/Apages/Dashboard'
+import ServiceMange from './Admin/Apages/ServiceMange'
 
 function App() {
   return (
@@ -29,6 +31,10 @@ function App() {
 
           {/* 404 page */}
           <Route path='*' element={<NotFound />}/>
+
+          {/* admin site */}
+          <Route path='/dash' element={<Dashboard />} />
+          <Route path='/servicmanage' element={<ServiceMange />} />
 
         </Routes>
       </div>

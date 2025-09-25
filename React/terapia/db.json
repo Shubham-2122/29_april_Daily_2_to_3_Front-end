@@ -1,0 +1,59 @@
+{
+    "admin":[
+        {
+            "id":"1",
+            "name":"Admin",
+            "email":"admin@gmail.com",
+            "password":"123456"
+        },
+        {
+            "id":"2",
+            "name":"Subadmin",
+            "email":"subadmin@gmail.com",
+            "password":"1234"
+        }
+    ],
+    "user":[
+        {
+            "id":"1",
+            "name":"meet",
+            "email":"meet@gmail.com",
+            "password":"123456",
+            "status":"unblock"
+        },
+        {
+            "id":"2",
+            "name":"pratick",
+            "email":"pratick@gmail.com",
+            "password":"123456",
+            "status":"block"
+        },
+        {
+            "id":"3",
+            "name":"shubham",
+            "email":"shubham@gmail.com",
+            "password":"1234",
+            "status":"unblock"
+        }
+    ],
+    "service":[
+        {
+            "id":"1",
+            "name":"Physiotherapy",
+            "desc":"Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam",
+            "image":"https://media.istockphoto.com/id/2209516400/photo/man-relaxing-during-back-massage-at-the-spa.jpg?b=1&s=612x612&w=0&k=20&c=LcEgxOJmg2XFa2VaDCfI7hCdb1litviM9-I6IpeoDz4="
+        },
+         {
+            "id":"2",
+            "name":"Heat & Cold Therapy",
+            "desc":"Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam",
+            "image":"https://images.pexels.com/photos/6663465/pexels-photo-6663465.jpeg?_gl=1*10elzlj*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NTg3Nzk0NDEkbzIwJGcxJHQxNzU4Nzc5NjQwJGo2MCRsMCRoMA.."
+        },
+         {
+            "id":"3",
+            "name":"Message Therapy",
+            "desc":"Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam",
+            "image":"https://images.pexels.com/photos/14256889/pexels-photo-14256889.jpeg?_gl=1*1o9gszq*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NTg3Nzk0NDEkbzIwJGcxJHQxNzU4Nzc5NzIwJGo2MCRsMCRoMA.."
+        }
+    ]
+}
