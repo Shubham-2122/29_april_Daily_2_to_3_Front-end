@@ -12,6 +12,7 @@ import Contact from './Website/Pages/Contact'
 import NotFound from './Website/Pages/NotFound'
 import Dashboard from './Admin/Apages/Dashboard'
 import ServiceMange from './Admin/Apages/ServiceMange'
+import ServiceAdd from './Admin/Apages/ServiceAdd'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           {/* admin site */}
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/servicmanage' element={<ServiceMange />} />
+          <Route path='/serviceadd' element={<ServiceAdd />} />
 
         </Routes>
       </div>
