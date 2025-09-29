@@ -13,6 +13,7 @@ import NotFound from './Website/Pages/NotFound'
 import Dashboard from './Admin/Apages/Dashboard'
 import ServiceMange from './Admin/Apages/ServiceMange'
 import ServiceAdd from './Admin/Apages/ServiceAdd'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/serviceadd' element={<ServiceAdd />} />
 
         </Routes>
+        <ToastContainer theme='dark'  />
       </div>
     </BrowserRouter>
   )

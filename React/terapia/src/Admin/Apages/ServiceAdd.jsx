@@ -3,6 +3,7 @@ import Aheader from '../Acoman/Aheader'
 import Anavs from '../Acoman/Anavs'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function ServiceAdd() {
 
@@ -26,6 +27,15 @@ function ServiceAdd() {
 
     const ServiceADD = async (e) => {
         e.preventDefault()
+
+        if(form.name == "" || form.image == "" || form.desc == ""){
+            console.log("first filed data")
+            toast.error(" pls field data",{
+                theme:"colored"
+            })
+            return false
+        }
+
         try {
             const res = await axios.post("http://localhost:3000/service", form)
             console.log(res.data)
