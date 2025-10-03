@@ -37,16 +37,66 @@ function ServiceMange() {
         }
     }
 
-    const delservice =async(id)=>{
+    const delservice = async (id) => {
         try {
             const res = await axios.delete(`http://localhost:3000/service/${id}`)
             console.log(res.data)
-            toast.success("successfully delete..!",{
-                theme:"colored"
+            toast.success("successfully delete..!", {
+                theme: "colored"
             })
             fetchdata()
         } catch (error) {
-             toast.error("Api data not Found..")
+            toast.error("Api data not Found..")
+        }
+    }
+
+    // edit 
+    // model
+    const [edited, setedited] = useState(null)
+    // data get and change 
+    const [sedit, setsedit] = useState({
+        id: "",
+        name: "",
+        desc: "",
+        image: ""
+    })
+
+    // id get
+    const getdatam = (service) => {
+        setedited(service)
+        setsedit(service)
+    }
+
+    //    getchange
+    const getchange = (e) => {
+        setsedit({
+            ...sedit,
+            [e.target.name]: e.target.value
+        })
+        console.log(sedit)
+    }
+
+    // update method
+    const serviupdate = async (e) => {
+        e.preventDefault()
+        if (sedit.name == "" || sedit.image == "" || sedit.desc == "") {
+            console.log("first filed data")
+            toast.error(" pls field data", {
+                theme: "colored"
+            })
+            return false
+        }
+
+        try {
+            const res = await axios.put(`http://localhost:3000/service/${sedit.id}`, sedit)
+            console.log(res.data)
+            toast.success("service Updated..")
+            setedited(null)
+            fetchdata()
+
+        } catch (error) {
+            console.log("Api data not Found..", error)
+            toast.error("Api data not Found")
         }
     }
 
@@ -90,8 +140,8 @@ function ServiceMange() {
                                         </td>
                                         <td>
                                             <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getservice(data.id)}>view</button>
-                                            <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger' onClick={()=>delservice(data.id)}>Delete</button>
+                                            <button className='btn btn-success mx-2' onClick={() => getdatam(data)}>Edit</button>
+                                            <button className='btn btn-danger' onClick={() => delservice(data.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -124,10 +174,43 @@ function ServiceMange() {
                                     </div>
                                 </div>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
+
+                {
+                    edited && (
+                        <div className="appointment-form rounded p-5">
+                            <p className="fs-4 text-uppercase text-primary">Get In Touch</p>
+                            <h1 className="display-5 mb-4">Service Update form</h1>
+                            <form>
+                                <div className="row gy-3 gx-4">
+                                    <div className="col-xl-6">
+                                        <input type="text" name='name' onChange={getchange} value={sedit.name} className="form-control py-3 border-primary bg-transparent text-dark" placeholder="service Name" />
+                                    </div>
+                                    <div className="col-xl-6">
+                                        <input type="url" name='image' value={sedit.image} onChange={getchange} className="form-control py-3 border-primary bg-transparent text-dark" placeholder="Service Image" />
+                                    </div>
+
+                                    <div className="col-12">
+                                        <textarea name="desc" value={sedit.desc} onChange={getchange} className="form-control border-primary bg-transparent text-dark" id="area-text" cols={30} rows={5} placeholder="Service Desc" defaultValue={""} />
+                                    </div>
+                                    <div className="col-12">
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <button type="button" onClick={serviupdate} className="btn btn-primary text-white w-100 py-3 px-5">SERVICE Update</button>
+                                            </div>
+                                            <div className="col-6">
+                                                <button onClick={() => setedited(null)} type="button" className="btn btn-primary text-white w-100 py-3 px-5">Cancle update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    )
+                }
             </div>
         </div>
     )
