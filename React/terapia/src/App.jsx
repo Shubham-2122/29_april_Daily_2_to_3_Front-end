@@ -14,6 +14,7 @@ import Dashboard from './Admin/Apages/Dashboard'
 import ServiceMange from './Admin/Apages/ServiceMange'
 import ServiceAdd from './Admin/Apages/ServiceAdd'
 import { ToastContainer } from 'react-toastify';
+import Alogin from './Admin/Apages/Alogin'
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/servicmanage' element={<ServiceMange />} />
           <Route path='/serviceadd' element={<ServiceAdd />} />
+          <Route path='/alogin' element={<Alogin />} />
 
         </Routes>
         <ToastContainer theme='dark'  />
