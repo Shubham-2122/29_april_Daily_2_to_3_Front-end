@@ -15,6 +15,8 @@ import ServiceMange from './Admin/Apages/ServiceMange'
 import ServiceAdd from './Admin/Apages/ServiceAdd'
 import { ToastContainer } from 'react-toastify';
 import Alogin from './Admin/Apages/Alogin'
+import Ulogin from './Website/Pages/Ulogin'
+import Register from './Website/Pages/Register'
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path='/team' element={<Team />} />
           <Route path='/testi' element={<Testi />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/login' element={<Ulogin />} />
+          <Route path='/register' element={<Register />} />
 
           {/* 404 page */}
           <Route path='*' element={<NotFound />}/>

@@ -1,7 +1,24 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Aheader() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Aid")){
+            redirect("/alogin")
+        }
+    },)
+
+    const logout =()=>{
+        localStorage.removeItem("Aid");
+        localStorage.removeItem("Aname");
+        redirect("/alogin")
+        toast.success("successfully logout.!")   
+    }
+
   return (
     <div>
         <div>
@@ -38,8 +55,29 @@ function Aheader() {
                                     </div>
                                 </div>
                                 <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
+                                {
+                                    (()=>{
+                                        if(localStorage.getItem("Aid")){
+                                            return(
+                                                 <NavLink  className="nav-item nav-link">Hello {localStorage.getItem("Aname")}</NavLink>
+                                            )
+                                        }
+                                    })()
+                                }
+                                {
+                                    (()=>{
+                                        if(localStorage.getItem("Aid")){
+                                            return(
+                                                <NavLink onClick={logout} className="nav-item nav-link">logout</NavLink>
+                                            )
+                                        }
+                                        else{
+                                             <NavLink  className="nav-item nav-link">login</NavLink>
+                                        }
+                                    })()
+                                }
                             </div>
-                            <a href="#" className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                           
                         </div>
                     </nav>
                     {/* Carousel Start */}

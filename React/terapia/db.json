@@ -34,6 +34,13 @@
       "email": "shubham@gmail.com",
       "password": "1234",
       "status": "unblock"
+    },
+    {
+      "id": "1759731532431",
+      "email": "sujal@gmail.com",
+      "name": "sujal",
+      "password": "1234",
+      "status": "unblock"
     }
   ],
   "service": [
