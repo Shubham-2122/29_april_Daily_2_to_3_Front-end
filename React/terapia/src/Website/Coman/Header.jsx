@@ -73,7 +73,7 @@ function Header() {
                                                                     (()=>{
                                                                         if(localStorage.getItem("Uid")){
                                                                             return(
-                                                                                 <NavLink  className="nav-item nav-link">Hello {localStorage.getItem("Uname")}</NavLink>
+                                                                                 <NavLink to="/edit" className="nav-item nav-link">Hello {localStorage.getItem("Uname")}</NavLink>
                                                                             )
                                                                         }
                                                                     })()
