@@ -11,6 +11,13 @@ function AddProduct() {
 
     const {products ,setProducts ,addProduct } = context;
 
+    // const getchage =(e)=>{
+    //     setProducts({
+    //         ...products,
+    //         [e.target.name]:e.target.value
+    //     })
+    // }
+
   return (
     <div>
         <div className=' flex justify-center items-center h-screen'>
