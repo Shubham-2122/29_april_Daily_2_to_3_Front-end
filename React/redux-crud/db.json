@@ -1,22 +1,16 @@
 {
-    "users":[
-        {
-            "id":"1",
-            "name":"meet",
-            "email":"meet@gmail.com",
-            "password":"123456"
-        },
-        {
-            "id":"2",
-            "name":"pratick",
-            "email":"pratick@gmail.com",
-            "password":"123456"
-        },
-        {
-            "id":"3",
-            "name":"shubham",
-            "email":"shubham@gmail.com",
-            "password":"123456"
-        }
-    ]
+  "users": [
+    {
+      "id": "1760505753735",
+      "name": "sujal",
+      "email": "sujal@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "1760506385791",
+      "name": "shubham3",
+      "email": "shubham@gmail.com",
+      "password": "asd12"
+    }
+  ]
 }

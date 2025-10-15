@@ -1,18 +1,21 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { readuser } from './Slice/userSlice'
+import { deleteuser, readuser } from './Slice/userSlice'
+import { Link } from 'react-router-dom'
 
 function Read() {
 
     const { users, loading } = useSelector((state) => state.users)
 
-    console.log(users)
+    // console.log(users)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(readuser())
     }, [])
+
+    
 
     return (
         <div>
@@ -31,14 +34,14 @@ function Read() {
                         {
                             users && users.map((data, index) => {
                                 return (
-                                    <tr className='text-center'>
+                                    <tr className='text-center' key={index}>
                                         <th scope="row">{data.id}</th>
                                         <td>{data.name}</td>
                                         <td>{data.email}</td>
                                         <td>
                                             <button className='btn btn-info'>Read</button>
-                                            <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger'>Delete</button>
+                                            <Link to={`/edit/${data.id}`} className='btn btn-success mx-2'>Edit</Link>
+                                            <button className='btn btn-danger'  onClick={()=>dispatch(deleteuser(data.id))}>Delete</button>
                                         </td>
                                     </tr>
                                 )
